@@ -1,0 +1,100 @@
+main {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1440px;
+}
+
+.main_info {
+    width: 100%;
+    max-width: 870px;
+}
+
+.main_info p {
+    font-size: 18px;
+    margin: 20px 0 28px;
+}
+
+/* Fotos */
+
+section.wallp{
+    padding: 40px 4%;
+    margin-bottom: 20px;
+}
+
+section.wallp .flex{
+    gap: 60px;
+    margin-top: 60px;
+}
+
+.wallp .wallp-box{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.wallp .wallp-box img{
+    width: 100%;
+    transition: all 0.2s linear;
+}
+
+.wallp .wallp-box img:hover {
+    transform: scale(90%);
+}
+
+.img-person{
+    display: grid;
+    grid-template-columns:  repeat(4,1fr);
+    gap: 20px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+
+section.wallpapers{
+    padding: 40px 4%;
+    margin-bottom: 20px;
+}
+
+section.wallpapers .flex{
+    gap: 60px;
+    display: flex;
+}
+
+.wallpapers .wallpapers-box{
+    padding: 40px;
+    margin-top: 60px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.img-historia{
+    display: block;
+    gap: 20px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.main_info div{
+    display: flex;
+    column-gap: 32px;
+}
+.main_info div a{
+    margin: 0 auto;
+    width: 30%;
+    padding: 10px 0;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: transparent;
+    border: 1px solid var(--red);
+    transform: skew(-10deg);
+}
